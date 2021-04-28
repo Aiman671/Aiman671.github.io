@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/background.css"> <!--Background for Order Form Page-->
+        <link rel="stylesheet" href="css/table.css"> <!--Import CSS for table in Order Form-->
+        <script src="js/OrderForm.js"></script> <!--Import JS for order form-->
+        <title>Order Form</title>
+    </head>
+
+    <body style="background-image: url(media/bg6.jpg);">
+        <div name="OrderForm">
+            <div class="bg" style="background-image: url(media/bg3.jpg);">
+                <marquee behaviour="scroll" direction="right" scrollamount=18>
+                    <h1>MAN'S HOT CURRY PUFF ONLINE STORE - ORDER FORM</h1>
+                </marquee>
+            </div>
+
+            <br>
+
+            <div style="background-color: #7BCCB5; padding: 30px; opacity: 85%;">
+                <head>
+                </head>
+           
+                <body>
+                    <div style="font-family: Arial, Helvetica, sans-serif;">
+                        <h2>Order Form:-</h2>
+                    </div>
+                    <div style="background-color:cornsilk; padding: 5px; width: 670px;">
+                        <div style="font-family: Arial, Helvetica, sans-serif;">
+                            <p><b>p/s - Please refer our curry puff menu on the below for price per curry puff selected!</b></p>
+                            <ul type="disc">
+                                <li>Potato Curry Puff - RM1/piece</li>
+                                <li>Chicken Curry Puff - RM1/piece</li>
+                                <li>Sardine Curry Puff - RM1/piece</li>
+                                <li>Beef Curry Puff - RM2/piece</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br>
+
+                <form>
+                    <table border="2" style="width: 500px;">
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Insert your Name : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <input type="text" id="name" placeholder="Insert your name" style="height: 35px; width: 180px;">
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Insert your Address : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <textarea id="address"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Select Curry Puff : </b></td></td>
+                            </b>
+                            <td style="text-align: center; justify-content: center;">
+                                <select id="CType">
+                                <option disabled>---Select Curry Puff---</option>
+                                <option>Potato Curry Puff</option>
+                                <option>Chicken Curry Puff</option>
+                                <option>Sardine Curry Puff</option>
+                                <option>Beef Curry Puff</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Insert Curry Puff Amount : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <input type="text" placeholder="Enter curry puff amount" id="t1" style="height: 35px; width: 180px;">
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Enter Price per Curry Puff : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <input type="text" placeholder="Enter price per curry puff" id="t2" style="height: 35px; width: 180px;">
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Delivery Type : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: justify;">
+                                <select id="runner">
+                                    <option disabled>---Select Runner---</option>
+                                    <option>GrabFoob</option>
+                                    <option>FoodPanda</option>
+                                    <option>PosLaju</option>
+                                    <option>J&T</option>
+                                    <option>Ninja Van</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr style="height: 70px; background-color: floralwhite;">
+                            <td>
+                                <b>Payment Method: </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <select id="PayMet">
+                                    <option disabled>---Choose Payment Type---</option>
+                                    <option>Cash on Delivery</option>
+                                    <option>Online Banking</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <button onclick="OrderReceipt()">Confirm Order</button>
+                <button onclick="Cancel()">Cancel Order</button>
+
+                <br><br>
+
+                <div style="background-color: aliceblue; padding: 15px; width: 500px;">
+                    <h2>Final Receipt:</h2>
+                    <p id="result" style="font-family: Arial, Helvetica, sans-serif;"></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div style="background-color: #EE9A4D; padding: 20px; opacity: 85%;">
+                <div style="justify-content: center; text-align: center;">
+                    <img src="media/quotes.jpg" width="300px" height="200px">
+                    <img src="media/thanks.jpg" width="300px" height="200px">
+                    <img src="media/quotes2.jpg" width="300px" height="200px">
+                </div>
+            </div>
+
+            <br>
+
+            <div style="background-color: Coral; height: 90px; opacity: 85%;">
+                <marquee behaviour="scroll" direction="up" scrollamount=3>
+                    <div style="text-align: center; justify-content: center;">
+                        <h1>THANKS FOR YOUR ENDLESS SUPPORT!</h1>
+                    </div>
+                </marquee>
+            </div>
+
+            <br>
+
+            <div style="text-align: center; justify-content: center;">
+                <a href="index.html"><button style="width: 150px; height: 50px;">Return to Main Page</button></a>
+            </div>
+        </div>
+    </body>
+</html>
